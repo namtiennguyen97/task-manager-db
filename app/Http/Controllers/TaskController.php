@@ -14,6 +14,9 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function index2(){
+return redirect()->route('list.task');
+    }
     public function index()
     {
         $tasks =\App\Task::all();
